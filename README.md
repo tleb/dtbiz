@@ -15,3 +15,7 @@ There are two versions:
    ⟩ ./dtbiz.py demo.dtb > py.html
    ⟩ firefox py.html
    ```
+
+---
+
+![screenshot of the tool, showing a tree structure of the DTB](/screenshot.png)
