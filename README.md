@@ -7,7 +7,7 @@ Visualise flattened devicetree
 
 There are two versions:
 
- - Web, all in JS, without any back-end. **[Accessible online here](https://tleb.github.io/dtbiz/).**
+ - Web, all in JS, without any back-end. **[Accessible online here](https://tleb.fr/dtbiz/).**
 
  - Python. No dependency either, it should run fine with a stock Python 3.
 
