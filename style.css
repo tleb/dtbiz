@@ -3,8 +3,8 @@ html {
 	max-width: fit-content;
 }
 
-section#file-input.disabled {
-	display: none;
+section#file-input input {
+	font-size: initial;
 }
 
 section#file-input {
