@@ -65,7 +65,7 @@ function* parseTokens(buf, hdr) {
 				console.assert(NodeRegexp.test(token.name))
 
 			parentNodes.push(token.name)
-			token.path = parentNodes.length == 0 ? "/" : parentNodes.join('/')
+			token.path = parentNodes.length == 1 ? "/" : parentNodes.join('/')
 		} else if (token.type == FDT_END_NODE) {
 			parentNodes.pop()
 		} else if (token.type == FDT_PROP) {
