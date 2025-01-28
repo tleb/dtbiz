@@ -179,9 +179,15 @@ function prettyPropValue(propValue, propName) {
 			res.push("0x" + view.getUint32(i).toString(16))
 		}
 		return res.join(' ')
+	} else {
+		const chars = "0123456789ABCDEF"
+		let res = "0x"
+		for (let i = 0; i < propValue.byteLength; i++) {
+			const x = arr[i]
+			res += chars[(x >> 4) & 0xF] + chars[x & 0xF]
+		}
+		return res
 	}
-
-	return "0x" + arr.toHex()
 }
 
 function buildDOM(node) {
